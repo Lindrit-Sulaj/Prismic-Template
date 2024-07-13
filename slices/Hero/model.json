@@ -1,0 +1,168 @@
+{
+  "id": "hero",
+  "type": "SharedSlice",
+  "name": "Hero",
+  "description": "Hero",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "text",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading1"
+          }
+        },
+        "buttons": {
+          "type": "Group",
+          "config": {
+            "label": "buttons",
+            "repeat": true,
+            "fields": {
+              "link": {
+                "type": "Link",
+                "config": {
+                  "label": "link",
+                  "placeholder": "",
+                  "select": null
+                }
+              },
+              "display": {
+                "type": "Text",
+                "config": {
+                  "label": "Display",
+                  "placeholder": ""
+                }
+              },
+              "variant": {
+                "type": "Select",
+                "config": {
+                  "label": "variant",
+                  "placeholder": "",
+                  "options": [
+                    "primary",
+                    "secondary"
+                  ],
+                  "default_value": "primary"
+                }
+              }
+            }
+          }
+        },
+        "textalign": {
+          "type": "Select",
+          "config": {
+            "label": "textAlign",
+            "placeholder": "",
+            "options": [
+              "center",
+              "left"
+            ],
+            "default_value": "center"
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "withBackground",
+      "name": "With background",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "text",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading1"
+          }
+        },
+        "buttons": {
+          "type": "Group",
+          "config": {
+            "label": "buttons",
+            "repeat": true,
+            "fields": {
+              "link": {
+                "type": "Link",
+                "config": {
+                  "label": "link",
+                  "placeholder": "",
+                  "select": null
+                }
+              },
+              "display": {
+                "type": "Text",
+                "config": {
+                  "label": "Display",
+                  "placeholder": ""
+                }
+              },
+              "variant": {
+                "type": "Select",
+                "config": {
+                  "label": "variant",
+                  "placeholder": "",
+                  "options": [
+                    "primary",
+                    "secondary"
+                  ],
+                  "default_value": "primary"
+                }
+              }
+            }
+          }
+        },
+        "textalign": {
+          "type": "Select",
+          "config": {
+            "label": "textAlign",
+            "placeholder": "",
+            "options": [
+              "center",
+              "left"
+            ],
+            "default_value": "center"
+          }
+        },
+        "backgroundimage": {
+          "type": "Image",
+          "config": {
+            "label": "backgroundImage",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "darkenimage": {
+          "type": "Boolean",
+          "config": {
+            "label": "darkenImage",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        },
+        "darkeningcolor": {
+          "type": "Color",
+          "config": {
+            "label": "darkeningColor",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
