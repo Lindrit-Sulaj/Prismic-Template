@@ -32,7 +32,7 @@
 								{
 									"__TYPE__": "FieldContent",
 									"type": "Select",
-									"value": "secondary"
+									"value": "default"
 								}
 							],
 							[
@@ -97,9 +97,271 @@
 			"background": {
 				"__TYPE__": "FieldContent",
 				"type": "Select",
-				"value": "Dark"
+				"value": "Gray"
+			},
+			"image": {
+				"origin": {
+					"id": "main",
+					"url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04",
+					"width": 4000,
+					"height": 4000
+				},
+				"url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04",
+				"width": 4000,
+				"height": 4000,
+				"edit": {
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 0
+					},
+					"background": "transparent"
+				},
+				"credits": null,
+				"alt": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
 			}
 		},
 		"items": []
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "contentLeftImageRight",
+		"primary": {
+			"text": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "We are your trusted partner",
+							"spans": []
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Partner with us to grow your business to the next level. We specialize in web design, SEO, e-commerce and much more.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"call_to_actions": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"button_display",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Get Started"
+								}
+							],
+							[
+								"link",
+								{
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "https://slicemachine.dev"
+									}
+								}
+							],
+							[
+								"icon",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "Arrow Up Right",
+									"type": "Select"
+								}
+							],
+							[
+								"variant",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "default",
+									"type": "Select"
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"button_display",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Learn more"
+								}
+							],
+							[
+								"variant",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Select",
+									"value": "outline"
+								}
+							]
+						]
+					}
+				]
+			},
+			"background": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Gray"
+			},
+			"image": {
+				"url": "https://images.unsplash.com/photo-1616679312958-a86d9539afae?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw0fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MjA4MjEzODV8MA&ixlib=rb-4.0.3&q=85&rect=0%2C266%2C3024%2C3500&w=3024&h=3500",
+				"alt": "orange fruit on white ceramic plate",
+				"origin": {
+					"id": "Jr7t5QviCDM",
+					"url": "https://images.unsplash.com/photo-1616679312958-a86d9539afae?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw0fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MjA4MjEzODV8MA&ixlib=rb-4.0.3&q=85",
+					"width": 3024,
+					"height": 4032
+				},
+				"width": 3024,
+				"height": 3500,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 0,
+						"y": 266
+					}
+				},
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"image_full_height": {
+				"__TYPE__": "BooleanContent",
+				"value": true
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "contentRightImageLeft",
+		"primary": {
+			"text": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "We are your trusted partner",
+							"spans": []
+						},
+						"direction": "ltr"
+					},
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Partner with us to grow your business to the next level. We specialize in web design, SEO, e-commerce and much more.",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"call_to_actions": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"button_display",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Contact us"
+								}
+							],
+							[
+								"link",
+								{
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "https://prismic.io"
+									}
+								}
+							],
+							[
+								"icon",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Select",
+									"value": "Arrow Long Right"
+								}
+							],
+							[
+								"variant",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "default",
+									"type": "Select"
+								}
+							]
+						]
+					}
+				]
+			},
+			"background": {
+				"__TYPE__": "FieldContent",
+				"value": "Gray",
+				"type": "Select"
+			},
+			"image": {
+				"url": "https://images.unsplash.com/photo-1504707748692-419802cf939d?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyMnx8bGFwdG9wfGVufDB8fHx8MTcyMDg5MzE4MXww&ixlib=rb-4.0.3&q=85&rect=310%2C0%2C2310%2C3456&w=2043&h=3056",
+				"alt": "turned on MacBook Pro on gray surface",
+				"origin": {
+					"id": "t9DooibgMEk",
+					"url": "https://images.unsplash.com/photo-1504707748692-419802cf939d?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyMnx8bGFwdG9wfGVufDB8fHx8MTcyMDg5MzE4MXww&ixlib=rb-4.0.3&q=85",
+					"width": 5043,
+					"height": 3456
+				},
+				"width": 2043,
+				"height": 3056,
+				"edit": {
+					"background": "transparent",
+					"zoom": 1,
+					"crop": {
+						"x": 310,
+						"y": 0
+					}
+				},
+				"credits": null,
+				"__TYPE__": "ImageContent",
+				"thumbnails": {}
+			},
+			"image_full_height": {
+				"__TYPE__": "BooleanContent",
+				"value": true
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
 	}
 ]

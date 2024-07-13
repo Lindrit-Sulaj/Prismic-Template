@@ -99,6 +99,222 @@
             ],
             "default_value": "None"
           }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "contentLeftImageRight",
+      "name": "Content Left - Image Right",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Text",
+            "placeholder": "The main heading and the heading description.",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading1"
+          }
+        },
+        "call_to_actions": {
+          "type": "Group",
+          "config": {
+            "label": "Call To Actions",
+            "repeat": true,
+            "fields": {
+              "button_display": {
+                "type": "Text",
+                "config": {
+                  "label": "Button Display",
+                  "placeholder": "Get Started"
+                }
+              },
+              "link": {
+                "type": "Link",
+                "config": {
+                  "label": "Link",
+                  "placeholder": "",
+                  "allowTargetBlank": false,
+                  "select": null
+                }
+              },
+              "icon": {
+                "type": "Select",
+                "config": {
+                  "label": "Icon",
+                  "placeholder": "",
+                  "options": [
+                    "None",
+                    "Chevron Right",
+                    "Arrow Right",
+                    "Arrow Long Right",
+                    "Arrow Up Right"
+                  ],
+                  "default_value": "None"
+                }
+              },
+              "variant": {
+                "type": "Select",
+                "config": {
+                  "label": "variant",
+                  "placeholder": "Primary",
+                  "options": [
+                    "default",
+                    "secondary",
+                    "ghost",
+                    "outline"
+                  ],
+                  "default_value": "default"
+                }
+              }
+            }
+          }
+        },
+        "background": {
+          "type": "Select",
+          "config": {
+            "label": "Background",
+            "placeholder": "",
+            "options": [
+              "None",
+              "Gray",
+              "Dark"
+            ],
+            "default_value": "None"
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "image_full_height": {
+          "type": "Boolean",
+          "config": {
+            "label": "Image Full Height",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        }
+      },
+      "items": {}
+    },
+    {
+      "id": "contentRightImageLeft",
+      "name": "Content Right - Image Left",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Text",
+            "placeholder": "The main heading and the heading description.",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading1"
+          }
+        },
+        "call_to_actions": {
+          "type": "Group",
+          "config": {
+            "label": "Call To Actions",
+            "repeat": true,
+            "fields": {
+              "button_display": {
+                "type": "Text",
+                "config": {
+                  "label": "Button Display",
+                  "placeholder": "Get Started"
+                }
+              },
+              "link": {
+                "type": "Link",
+                "config": {
+                  "label": "Link",
+                  "placeholder": "",
+                  "allowTargetBlank": false,
+                  "select": null
+                }
+              },
+              "icon": {
+                "type": "Select",
+                "config": {
+                  "label": "Icon",
+                  "placeholder": "",
+                  "options": [
+                    "None",
+                    "Chevron Right",
+                    "Arrow Right",
+                    "Arrow Long Right",
+                    "Arrow Up Right"
+                  ],
+                  "default_value": "None"
+                }
+              },
+              "variant": {
+                "type": "Select",
+                "config": {
+                  "label": "variant",
+                  "placeholder": "Primary",
+                  "options": [
+                    "default",
+                    "secondary",
+                    "ghost",
+                    "outline"
+                  ],
+                  "default_value": "default"
+                }
+              }
+            }
+          }
+        },
+        "background": {
+          "type": "Select",
+          "config": {
+            "label": "Background",
+            "placeholder": "",
+            "options": [
+              "None",
+              "Gray",
+              "Dark"
+            ],
+            "default_value": "None"
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "image_full_height": {
+          "type": "Boolean",
+          "config": {
+            "label": "Image Full Height",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
         }
       },
       "items": {}

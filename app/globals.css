@@ -79,3 +79,8 @@
 .slice--hero p {
   @apply mt-4 md:text-lg max-w-xl
 }
+
+.slice--hero > div[data-center="true"] h1,
+.slice--hero > div[data-center="true"] p  {
+  @apply text-center
+}

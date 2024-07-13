@@ -215,6 +215,120 @@ export interface HeroSliceDefaultPrimaryCallToActionsItem {
 }
 
 /**
+ * Item in *Hero → Content Left - Image Right → Primary → Call To Actions*
+ */
+export interface HeroSliceContentLeftImageRightPrimaryCallToActionsItem {
+  /**
+   * Button Display field in *Hero → Content Left - Image Right → Primary → Call To Actions*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: Get Started
+   * - **API ID Path**: hero.contentLeftImageRight.primary.call_to_actions[].button_display
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  button_display: prismic.KeyTextField;
+
+  /**
+   * Link field in *Hero → Content Left - Image Right → Primary → Call To Actions*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.contentLeftImageRight.primary.call_to_actions[].link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  link: prismic.LinkField;
+
+  /**
+   * Icon field in *Hero → Content Left - Image Right → Primary → Call To Actions*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **Default Value**: None
+   * - **API ID Path**: hero.contentLeftImageRight.primary.call_to_actions[].icon
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  icon: prismic.SelectField<
+    | "None"
+    | "Chevron Right"
+    | "Arrow Right"
+    | "Arrow Long Right"
+    | "Arrow Up Right",
+    "filled"
+  >;
+
+  /**
+   * variant field in *Hero → Content Left - Image Right → Primary → Call To Actions*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: Primary
+   * - **Default Value**: default
+   * - **API ID Path**: hero.contentLeftImageRight.primary.call_to_actions[].variant
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  variant: prismic.SelectField<
+    "default" | "secondary" | "ghost" | "outline",
+    "filled"
+  >;
+}
+
+/**
+ * Item in *Hero → Content Right - Image Left → Primary → Call To Actions*
+ */
+export interface HeroSliceContentRightImageLeftPrimaryCallToActionsItem {
+  /**
+   * Button Display field in *Hero → Content Right - Image Left → Primary → Call To Actions*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: Get Started
+   * - **API ID Path**: hero.contentRightImageLeft.primary.call_to_actions[].button_display
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  button_display: prismic.KeyTextField;
+
+  /**
+   * Link field in *Hero → Content Right - Image Left → Primary → Call To Actions*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.contentRightImageLeft.primary.call_to_actions[].link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  link: prismic.LinkField;
+
+  /**
+   * Icon field in *Hero → Content Right - Image Left → Primary → Call To Actions*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **Default Value**: None
+   * - **API ID Path**: hero.contentRightImageLeft.primary.call_to_actions[].icon
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  icon: prismic.SelectField<
+    | "None"
+    | "Chevron Right"
+    | "Arrow Right"
+    | "Arrow Long Right"
+    | "Arrow Up Right",
+    "filled"
+  >;
+
+  /**
+   * variant field in *Hero → Content Right - Image Left → Primary → Call To Actions*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: Primary
+   * - **Default Value**: default
+   * - **API ID Path**: hero.contentRightImageLeft.primary.call_to_actions[].variant
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  variant: prismic.SelectField<
+    "default" | "secondary" | "ghost" | "outline",
+    "filled"
+  >;
+}
+
+/**
  * Primary content in *Hero → Default → Primary*
  */
 export interface HeroSliceDefaultPrimary {
@@ -261,6 +375,16 @@ export interface HeroSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#select
    */
   background: prismic.SelectField<"None" | "Gray" | "Dark", "filled">;
+
+  /**
+   * image field in *Hero → Default → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.default.primary.image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image: prismic.ImageField<never>;
 }
 
 /**
@@ -277,9 +401,156 @@ export type HeroSliceDefault = prismic.SharedSliceVariation<
 >;
 
 /**
+ * Primary content in *Hero → Content Left - Image Right → Primary*
+ */
+export interface HeroSliceContentLeftImageRightPrimary {
+  /**
+   * Text field in *Hero → Content Left - Image Right → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: The main heading and the heading description.
+   * - **API ID Path**: hero.contentLeftImageRight.primary.text
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  text: prismic.RichTextField;
+
+  /**
+   * Call To Actions field in *Hero → Content Left - Image Right → Primary*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.contentLeftImageRight.primary.call_to_actions[]
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  call_to_actions: prismic.GroupField<
+    Simplify<HeroSliceContentLeftImageRightPrimaryCallToActionsItem>
+  >;
+
+  /**
+   * Background field in *Hero → Content Left - Image Right → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **Default Value**: None
+   * - **API ID Path**: hero.contentLeftImageRight.primary.background
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  background: prismic.SelectField<"None" | "Gray" | "Dark", "filled">;
+
+  /**
+   * image field in *Hero → Content Left - Image Right → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.contentLeftImageRight.primary.image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image: prismic.ImageField<never>;
+
+  /**
+   * Image Full Height field in *Hero → Content Left - Image Right → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: hero.contentLeftImageRight.primary.image_full_height
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  image_full_height: prismic.BooleanField;
+}
+
+/**
+ * Content Left - Image Right variation for Hero Slice
+ *
+ * - **API ID**: `contentLeftImageRight`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type HeroSliceContentLeftImageRight = prismic.SharedSliceVariation<
+  "contentLeftImageRight",
+  Simplify<HeroSliceContentLeftImageRightPrimary>,
+  never
+>;
+
+/**
+ * Primary content in *Hero → Content Right - Image Left → Primary*
+ */
+export interface HeroSliceContentRightImageLeftPrimary {
+  /**
+   * Text field in *Hero → Content Right - Image Left → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: The main heading and the heading description.
+   * - **API ID Path**: hero.contentRightImageLeft.primary.text
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  text: prismic.RichTextField;
+
+  /**
+   * Call To Actions field in *Hero → Content Right - Image Left → Primary*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.contentRightImageLeft.primary.call_to_actions[]
+   * - **Documentation**: https://prismic.io/docs/field#group
+   */
+  call_to_actions: prismic.GroupField<
+    Simplify<HeroSliceContentRightImageLeftPrimaryCallToActionsItem>
+  >;
+
+  /**
+   * Background field in *Hero → Content Right - Image Left → Primary*
+   *
+   * - **Field Type**: Select
+   * - **Placeholder**: *None*
+   * - **Default Value**: None
+   * - **API ID Path**: hero.contentRightImageLeft.primary.background
+   * - **Documentation**: https://prismic.io/docs/field#select
+   */
+  background: prismic.SelectField<"None" | "Gray" | "Dark", "filled">;
+
+  /**
+   * image field in *Hero → Content Right - Image Left → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.contentRightImageLeft.primary.image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image: prismic.ImageField<never>;
+
+  /**
+   * Image Full Height field in *Hero → Content Right - Image Left → Primary*
+   *
+   * - **Field Type**: Boolean
+   * - **Placeholder**: *None*
+   * - **Default Value**: false
+   * - **API ID Path**: hero.contentRightImageLeft.primary.image_full_height
+   * - **Documentation**: https://prismic.io/docs/field#boolean
+   */
+  image_full_height: prismic.BooleanField;
+}
+
+/**
+ * Content Right - Image Left variation for Hero Slice
+ *
+ * - **API ID**: `contentRightImageLeft`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type HeroSliceContentRightImageLeft = prismic.SharedSliceVariation<
+  "contentRightImageLeft",
+  Simplify<HeroSliceContentRightImageLeftPrimary>,
+  never
+>;
+
+/**
  * Slice variation for *Hero*
  */
-type HeroSliceVariation = HeroSliceDefault;
+type HeroSliceVariation =
+  | HeroSliceDefault
+  | HeroSliceContentLeftImageRight
+  | HeroSliceContentRightImageLeft;
 
 /**
  * Hero Shared Slice
@@ -312,8 +583,14 @@ declare module "@prismicio/client" {
       HeroSlice,
       HeroSliceDefaultPrimaryCallToActionsItem,
       HeroSliceDefaultPrimary,
+      HeroSliceContentLeftImageRightPrimaryCallToActionsItem,
+      HeroSliceContentLeftImageRightPrimary,
+      HeroSliceContentRightImageLeftPrimaryCallToActionsItem,
+      HeroSliceContentRightImageLeftPrimary,
       HeroSliceVariation,
       HeroSliceDefault,
+      HeroSliceContentLeftImageRight,
+      HeroSliceContentRightImageLeft,
     };
   }
 }
