@@ -3,7 +3,7 @@
 		"__TYPE__": "SharedSliceContent",
 		"variation": "default",
 		"primary": {
-			"buttons": {
+			"call_to_actions": {
 				"__TYPE__": "GroupContentType",
 				"value": [
 					{
@@ -15,16 +15,16 @@
 									"__TYPE__": "LinkContent",
 									"value": {
 										"__TYPE__": "ExternalLink",
-										"url": "https://slicemachine.dev"
+										"url": "https://prismic.io"
 									}
 								}
 							],
 							[
-								"display",
+								"icon",
 								{
 									"__TYPE__": "FieldContent",
-									"type": "Text",
-									"value": "Contact"
+									"type": "Select",
+									"value": "None"
 								}
 							],
 							[
@@ -32,7 +32,15 @@
 								{
 									"__TYPE__": "FieldContent",
 									"type": "Select",
-									"value": "primary"
+									"value": "secondary"
+								}
+							],
+							[
+								"button_display",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Get a quote"
 								}
 							]
 						]
@@ -41,18 +49,7 @@
 						"__TYPE__": "GroupItemContent",
 						"value": [
 							[
-								"link",
-								{
-									"__TYPE__": "LinkContent",
-									"value": {
-										"__TYPE__": "ExternalLink",
-										"url": "/about",
-										"target": ""
-									}
-								}
-							],
-							[
-								"display",
+								"button_display",
 								{
 									"__TYPE__": "FieldContent",
 									"type": "Text",
@@ -64,7 +61,7 @@
 								{
 									"__TYPE__": "FieldContent",
 									"type": "Select",
-									"value": "secondary"
+									"value": "outline"
 								}
 							]
 						]
@@ -77,7 +74,7 @@
 					{
 						"type": "heading1",
 						"content": {
-							"text": "We build professional websites",
+							"text": "We are your trusted partner",
 							"spans": []
 						},
 						"direction": "ltr"
@@ -85,125 +82,24 @@
 					{
 						"type": "paragraph",
 						"content": {
-							"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dicta animi at, modi tenetur, officiis quaerat quam tempore minus vero debitis mollitia explicabo.",
+							"text": "Partner with us to grow your business to the next level. We specialize in web design, SEO, e-commerce and much more.",
 							"spans": []
 						},
 						"direction": "ltr"
 					}
 				]
 			},
-			"textalign": {
+			"align_content": {
 				"__TYPE__": "FieldContent",
 				"type": "Select",
-				"value": "center"
+				"value": "Center"
+			},
+			"background": {
+				"__TYPE__": "FieldContent",
+				"type": "Select",
+				"value": "Dark"
 			}
 		},
 		"items": []
-	},
-	{
-		"__TYPE__": "SharedSliceContent",
-		"variation": "withBackground",
-		"primary": {
-			"text": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "heading1",
-						"content": {
-							"text": "We build professional websites",
-							"spans": []
-						},
-						"direction": "ltr"
-					},
-					{
-						"type": "paragraph",
-						"content": {
-							"text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dicta animi at, modi tenetur, officiis quaerat quam tempore minus vero debitis mollitia explicabo.",
-							"spans": []
-						},
-						"direction": "ltr"
-					}
-				]
-			},
-			"buttons": {
-				"__TYPE__": "GroupContentType",
-				"value": [
-					{
-						"__TYPE__": "GroupItemContent",
-						"value": [
-							[
-								"link",
-								{
-									"__TYPE__": "LinkContent",
-									"value": {
-										"__TYPE__": "ExternalLink",
-										"url": "https://slicemachine.dev"
-									}
-								}
-							],
-							[
-								"display",
-								{
-									"__TYPE__": "FieldContent",
-									"type": "Text",
-									"value": "Get in touch"
-								}
-							],
-							[
-								"variant",
-								{
-									"__TYPE__": "FieldContent",
-									"type": "Select",
-									"value": "secondary"
-								}
-							]
-						]
-					}
-				]
-			},
-			"textalign": {
-				"__TYPE__": "FieldContent",
-				"type": "Select",
-				"value": "center"
-			},
-			"backgroundimage": {
-				"url": "https://images.unsplash.com/photo-1613260976142-3e9700b7a6a0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNnx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzIwODIxMzg1fDA&ixlib=rb-4.0.3&q=85&rect=0%2C598%2C4960%2C2480&w=1200&h=600",
-				"alt": "orange fruits on blue ceramic bowl",
-				"origin": {
-					"id": "-QOUBSKHvAM",
-					"url": "https://images.unsplash.com/photo-1613260976142-3e9700b7a6a0?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxNnx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzIwODIxMzg1fDA&ixlib=rb-4.0.3&q=85",
-					"width": 4960,
-					"height": 3594
-				},
-				"width": 1200,
-				"height": 600,
-				"edit": {
-					"background": "transparent",
-					"zoom": 1,
-					"crop": {
-						"x": 0,
-						"y": 598
-					}
-				},
-				"credits": null,
-				"__TYPE__": "ImageContent",
-				"thumbnails": {}
-			},
-			"darkenimage": {
-				"__TYPE__": "BooleanContent",
-				"value": true
-			},
-			"darkeningcolor": {
-				"__TYPE__": "FieldContent",
-				"type": "Color",
-				"value": "#060F00"
-			}
-		},
-		"items": [
-			{
-				"__TYPE__": "GroupItemContent",
-				"value": []
-			}
-		]
 	}
 ]
